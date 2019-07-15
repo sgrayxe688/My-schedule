@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Schedule</title>
+    <style>
+        td{
+            border: black 1px solid;
+            padding: 3px;
+            margin: 0px;
+        }
+        table{
+            border-spacing: 0px;
+        }
+        body{
+            text-align: center;
+        }
+        .magenta_bg{
+            background-color: magenta;
+        }
+        .red_bg{
+            background-color: red;
+        }
+        .green_bg{
+            background-color: rgb(34, 226, 34);
+        }
+    </style>
+</head>
+<body>
+    <table>
+            <caption>Weekly Schedule</caption>
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <th>Morning</th>
+                <td class="magenta_bg" colspan="5" rowspan="2">School</td>
+                <td class="red_bg" colspan="2" rowspan="3">Chillaxing</td>
+            </tr>
+            <tr>
+                <th>Afternoon</th>
+            </tr>
+            <tr>
+                <th>Evening</th>
+                <td class="green_bg" colspan="5">Homework</td>
+            </tr>
+        </table>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="First Last">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="example@example.com"/>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" placeholder="(555)555-5555"/>
+            <br>
+            <label for="best_contact">Best Way to Contact</label>
+            <select name="best_contact" id="best_contact" multiple>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Color Stuff</legend>
+            <h2>Favorite Color</h2>
+            <input type="radio" id="color1" name="color" value="red" checked="checked">
+            <label for="color1">Red</label>
+            <input type="radio" id="color2" name="color" value="blue">
+            <label for="color2">Blue</label>
+            <input type="radio" id="color3" name="color" value="green">
+            <label for="color3">Green</label>
+        </fieldset>
+        <fieldset>
+            <legend>Food Stuff</legend>
+            <h2>Favorite Food</h2>
+            <input type="checkbox" id="food1" name="food" value="italian" checked="checked">
+            <label for="food1">Italian</label>
+            
+            <input type="checkbox" id="food2" name="food" value="thai">
+            <label for="food2">Thai</label>
+           
+            <input type="checkbox" id="food3" name="food" value="chinese">
+            <label for="food3">Chinese</label>
+            <h2>Food Allergies</h2>
+            <select name="Allergies" id="food_allergies" multiple>
+                <option value="peanut">Peanut</option>
+                <option value="gluton">Gluton</option>
+                <option value="shellfish">Shellfish</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+
